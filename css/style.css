@@ -3,30 +3,34 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: #F9F9F9;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     height: 100%;
     width: 100%;
 }
 
-.navbar {
-    background-color: white;
-    position: fixed;
-    left: 0;
-}
-
 .topnav {
     background-color: white;
     overflow: hidden;
-    width: 100vw;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+    top: 0;
 }
 
 .logo {
-    height: 30px;
-    padding: 10px 10px 10px 15px;
+    background-image: url("../images/logo.svg");
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px 5px 5px 10px;
 }
 
 .topnav a {
@@ -40,9 +44,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .topnav a:hover {
     color: var(--dark-grey);
+    -webkit-transition: linear .3s; /* For Safari 3.1 to 6.0 */
 }
 
 .topnav a.active {
@@ -50,7 +54,12 @@ body {
     font-family: 'Roboto:700', sans-serif;
 }
 
+.topnav .icon {
+    display: none;
+}
+
 .banner {
+    padding-top: 54px;
     height: 600px;
     position: relative;
 }
@@ -69,19 +78,13 @@ body {
     background-repeat: no-repeat;
     background-size: contain, contain;
     background-position: left, right;
-    padding-bottom: 15px;
-}
-
-@media (max-width: 600px) {
-  .facet_sidebar {
-    display: none;
-  }
+    padding-bottom: 10px;
 }
 
 .splash {
     position: absolute;
-    top: calc(50% - 118.906px);
-    left: calc(50% - 118.906px);
+    top: calc(50% - 167.4765px);
+    left: calc(50% - 180.4765px);
     border-style: solid;
     border-width: 5px;
     border-color: white;
@@ -96,17 +99,159 @@ body {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 55px;
+    font-size: 55pt;
     padding: 3px 7px 3px 7px;
     color: var(--soft-blue);
 }
 
 .tagline {
     position: absolute;
-    padding-top: 15px;
-    padding-left: 60px;
-    font-size: 18;
+    margin-top: 15px;
+    margin-left: 65px;
+    font-size: 18pt;
     color: white;
+    background-color: var(--soft-blue);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.about {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.section-heading {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    font-size: 30pt;
+}
+
+.section-subheading {
+    font-size: 11pt;
+    color: grey;
+}
+
+.section-info {
+    color: var(--dark-grey);
+    font-size: 15pt;
+    padding-top: 10px;
+    width: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-pink);
+}
+
+.about-text {
+    line-height: 26pt;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.headshot {
+    width: 350px;
+    height: 170px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url(../images/headshot.png);
+    background-size: cover;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+::selection {
+  background: #C394A6;
+}
+
+
+@media (max-width: 1240px) {
+  .chameleon {
+    background-image: url(../images/chameleon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.section-subheading {
+    font-size: 11pt;
+    color: grey;
+
+}
+
+.headshot {
+   margin: auto;
+   display: none;
+}
+
+.section-info {
+    width: 100%;
+}
+
+.tagline {
+    background-color: white;
+    color: var(--soft-blue);
+}
+
+.section-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-heading {
+    padding-left: 10px;
+}
+}
+
+@media (max-width: 600px) {
+  .splash {
+    border-style: none;
+}
+
+.tagline{
+    display: none;
+}
+.chameleon {
+    background-image: url(../images/single_plant.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    bottom: 0;
+}
+
+.headshot {
+    display: block;
+    width: 100%;
+}
+
+.topnav a:not(:first-child) {display: none;}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 25pt;
+    padding: 0 10px;
+}
+
+.topnav.responsive {
+    position: relative;
+}
+
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+}
+
 }
 
 :root {
