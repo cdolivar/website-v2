@@ -10,7 +10,7 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 .topnav {
@@ -131,6 +131,7 @@ body {
 .section-subheading {
     font-size: 11pt;
     color: grey;
+    padding-left: 3px;
 }
 
 .section-info {
@@ -167,6 +168,221 @@ a {
   background: #C394A6;
 }
 
+.uiux {
+    background-color: #E7EEF0;
+    width: 100%;
+
+}
+
+.buffer {
+    height: 50px;
+}
+
+.ux-card {
+    width: 100%;
+    height: 200px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company {
+    width: 40%;
+    height: 100%;
+    background-color: grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+
+.walmart {
+    background-color: #007DC6; /* walmart primary blue */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.walmart-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/walmart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card-content {
+    padding-top: 20px;
+    position: relative;
+    left: 20px;
+
+
+}
+
+.card-title {
+    font-size: 25pt;
+    color: var(--light-pink);
+}
+
+.card-subtitle {
+    position: relative;
+    left: 5px;
+    font-size: 11pt;
+    color: #495557;
+}
+
+.card-info {
+    padding-top: 20px;
+    font-size: 13pt;
+    padding-right: 40px;
+}
+
+.graphic-design {
+    background-color: #F9F9F9;
+    width: 100%;
+}
+
+.contact {
+    background-color: #B4B4B4;
+    width: 100%
+    height: 300px;
+}
+
+.white {
+    color: white;
+}
+
+.footer {
+    background-color: #E7EEF0;
+    width: 100%;
+    height: 80px;
+}
+
+.footer-links {
+    font-size: 14pt;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.thumbnails {
+
+}
+
+.graphic-card {
+    width: 400px;
+    height: 400px;
+    /*background-color: black;*/
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    max-width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.graphic-card-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.graphic-card-overlay:hover {
+    opacity: 1;
+    -webkit-transition: linear .3s;
+}
+
+.graphic-title {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    font-size: 30pt;
+    color: white;
+}
+
+.overlay {
+    background-color: var(--dark-grey);
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+/* GRAPHIC DESIGN PORTFOLIO */
+
+.flyer {
+    background-image: url(../images/graphic_design/pursuit_flyer.png);
+}
+
+.campanile {
+    background-image: url(../images/graphic_design/isometric_campanile.png);
+}
+
+.missiontrip {
+    background-image: url(../images/graphic_design/missiontrip_splash.png);
+}
+
+.chameleon-house {
+    background-image: url(../images/graphic_design/chameleon_house.png);
+}
+
+.gradfest {
+    background-image: url(../images/graphic_design/gradfest.png);
+}
+
+.upe {
+    background-image: url(../images/graphic_design/upe.png);
+}
+
+/* END GRAPHIC DESIGN PORTFOLIO */
+
+input, textarea, button {
+    /* remove default styles */
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    /* add own style*/
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+input {
+    border-bottom:2px solid var(--light-pink);
+    width: 400px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    /* remove default styles */
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    width: 800px;
+    height: 300px;
+    max-width: 100%;
+    /* add own style */
+    width:
+}
+
+button {
+    display: block;
+    background-color: var(--light-pink);
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 @media (max-width: 1240px) {
   .chameleon {
@@ -179,7 +395,6 @@ a {
 .section-subheading {
     font-size: 11pt;
     color: grey;
-
 }
 
 .headshot {
@@ -204,9 +419,21 @@ a {
 .section-heading {
     padding-left: 10px;
 }
+
+.section-subheading {
+    padding-left: 10px;
 }
 
-@media (max-width: 600px) {
+.thumbnails {
+    text-align: center;
+}
+
+}
+
+
+
+
+@media (max-width: 800px) {
   .splash {
     border-style: none;
 }
@@ -222,10 +449,7 @@ a {
     bottom: 0;
 }
 
-.headshot {
-    display: block;
-    width: 100%;
-}
+
 
 .topnav a:not(:first-child) {display: none;}
 
@@ -252,6 +476,15 @@ a {
     text-align: center;
 }
 
+.company {
+    display: none;
+}
+
+.graphic-card {
+    width: 500px;
+}
+
+
 }
 
 :root {
@@ -261,3 +494,13 @@ a {
     --light-pink: #DF5589;
     --dark-pink: #DF5589;
 };
+
+
+
+
+@media (max-width: 800px) {
+    .headshot {
+        display: block;
+        width: 100%;
+    }
+}

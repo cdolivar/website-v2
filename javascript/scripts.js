@@ -7,3 +7,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+$(document).ready(function() {
+    // $(".section-heading").css("color", "blue");
+});

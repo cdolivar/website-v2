@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/logo.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
         <div class="logo"> </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">Contact</a>
+        <a href="#news">Graphic Design</a>
+        <a href="#contact">UI/UX</a>
         <a href="#about" class="active">About</a>
     </div>
 
@@ -26,29 +29,131 @@
             <div class="tagline">Designer. Developer.</div>
         </div>
 
-        <div class="about">
+        <a class="about" name="about">
             <div class="container">
-                <div class="section-heading">About</div>
-                <div class="section-subheading">learn a bit about me!</div>
+                <div class="section-heading">ABOUT</div>
+                <div class="section-subheading">Learn a bit about me!</div>
                 <div class="section-content">
+                    <div class="buffer"> </div>
                     <div class="headshot" alt="headshot of me in greece!">
 
                     </div>
                     <div class="about-text">
                         <div class="section-info">
-                            Hello! My name is Charles but I like to go by David. I’m a bay area native studying computer science at <a href="http://www.berkeley.edu/about/bythenumbers" target="_blank">UC Berkeley</a>. I’m interested in UI/UX design (yes, there’s a <a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/" target="blank">difference</a>), front-end development, and creating things that meet people’s needs in ways that <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=sr_1_1?ie=UTF8&qid=1504160406&sr=8-1&keywords=don%27t+make+me+think" target="blank">doesn’t make them think</a> . In my spare time you can find me drawing, playing soccer, and <a href="http://klesis.net/" target="blank">praising God</a> .
+                            Hello! My name is Charles but I like to go by David. I’m a bay area native studying computer science and <a target="blank" href="http://designinnovationcertificate.berkeley.edu/about/">design innovation</a> at <a href="http://www.berkeley.edu/about/bythenumbers" target="_blank">UC Berkeley</a>. I’m interested in UI/UX design (yes, there’s a <a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/" target="blank">difference</a>), front-end development, and creating things that meet people’s needs in ways that <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=sr_1_1?ie=UTF8&qid=1504160406&sr=8-1&keywords=don%27t+make+me+think" target="blank">doesn’t make them think</a> . In my spare time you can find me drawing, playing soccer, and <a href="http://klesis.net/" target="blank">praising God</a> .
                         </div>
                     </div>
                 </div>
-
             </div>
 
+        </a>
+
+        <div class="uiux">
+            <div class="container">
+                <div class="section-heading">UI/UX DESIGN</div>
+                <div class="section-subheading">Did someone say human centered?</div>
+                <div class="section-content">
+                    <div class="buffer">
+                    </div>
+                    <div class="ux-card">
+                        <div class="company walmart">
+                            <div class="walmart-logo"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Client Onboarding</div>
+                            <div class="card-subtitle">(ui/ux design and development)</div>
+                            <div class="card-info">During my internship with Walmart last summer, I got the chance to
+                                design and develop their internal onboarding portal.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buffer"></div>
+            </div>
+
+            <div class="graphic-design">
+                <div class="container">
+                    <div class="section-heading">GRAPHIC DESIGN</div>
+                    <div class="section-subheading">Things I like to work on in my spare time</div>
+                    <div class="buffer"></div>
+                    <!-- graphic design pieces -->
+                    <div class="thumbnails">
+                        <div class="graphic-card flyer">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">Klesis Flyer</div>
+                            </div>
+                        </div>
+                        <div class="graphic-card campanile">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">Isometric<br>Campanile</div>
+                            </div>
+                        </div>
+                        <div class="graphic-card missiontrip">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">Summer<br>Splash</div>
+                            </div>
+                        </div>
+                        <div class="graphic-card chameleon-house">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">Chameleon<br>House</div>
+                            </div>
+                        </div>
+                        <div class="graphic-card gradfest">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">Gradfest<br>Flyer</div>
+                            </div>
+                        </div>
+                        <div class="graphic-card upe">
+                            <div class="graphic-card-overlay">
+                                <div class="overlay"></div>
+                                <div class="graphic-title">UPE<br>Poster</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end graphic design thumbnails -->
+
+                    <div class="buffer"></div>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="container">
+                    <div class="section-heading">CONTACT</div>
+                    <div class="section-subheading white">Need help building something?</div>
+                    <div class="buffer"></div>
+                    <div class="form">
+                    <form>
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="buffer"></div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-links">
+                    <a target="_blank" href="images/resume.pdf">resume</a> |
+                    <a target="_blank" href="mailto:cdolivar@berkeley.edu">email</a> |
+                    <a target="_blank" href="https://www.linkedin.com/in/charles-david-olivar-2b3134104">linkedin</a> |
+                    <a target="_blank" href="https://github.com/cdolivar">github</a>
+                </div>
+            </div>
         </div>
 
-        <div class="">
-
-        </div>
-    </div>
-    <script type="text/javascript" src="javascript/scripts.js"></script>
-</body>
-</html>
+        <script type="text/javascript" src="javascript/scripts.js"></script>
+    </body>
+    </html>
