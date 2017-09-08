@@ -36,4 +36,10 @@ $(document).ready(function() {
         }, scrolltime);
     });
 
+    $("#contact").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact_link").offset().top
+        }, scrolltime);
+    });
+
 });

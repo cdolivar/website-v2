@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="images/logo.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="lightbox-master/src/css/lightbox.css" rel="stylesheet">
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -90,7 +90,7 @@
 
                         <div class="graphic-card flyer">
                             <div class="graphic-card-overlay">
-                                <a target="blank" href="images/graphic_design/pieces/klesis_flyer.pdf">
+                                <a target="blank" href="images/graphic_design/pieces/klesis_flyer.pdf" data-lightbox="Klesis Flyer">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">Klesis Flyer</div>
                                 </a>
@@ -99,7 +99,7 @@
 
                         <div class="graphic-card campanile">
                             <div class="graphic-card-overlay">
-                                <a href="images/graphic_design/pieces/campanile.pdf">
+                                <a href="images/graphic_design/pieces/campanile.png" data-lightbox="campanile">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">Isometric<br>Campanile</div>
                                 </a>
@@ -108,7 +108,7 @@
 
                         <div class="graphic-card missiontrip">
                             <div class="graphic-card-overlay">
-                                <a href="images/graphic_design/pieces/mission trip.pdf">
+                                <a href="images/graphic_design/pieces/mission trip.png" data-lightbox="summer splash">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">Summer<br>Splash</div>
                                 </a>
@@ -117,7 +117,7 @@
 
                         <div class="graphic-card chameleon-house">
                             <div class="graphic-card-overlay">
-                                <a href="images/graphic_design/pieces/chameleon.png">
+                                <a href="images/graphic_design/pieces/chameleon.png" data-lightbox="Chameleon House">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">Chameleon<br>House</div>
                                 </a>
@@ -126,7 +126,7 @@
 
                         <div class="graphic-card gradfest">
                             <div class="graphic-card-overlay">
-                                <a href="images/graphic_design/pieces/gradfest flyer.jpg">
+                                <a href="images/graphic_design/pieces/gradfest flyer.jpg" data-lightbox="Gradfest Flyer">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">Gradfest<br>Flyer</div>
                                 </a>
@@ -135,7 +135,7 @@
 
                         <div class="graphic-card upe">
                             <div class="graphic-card-overlay">
-                                <a href="images/graphic_design/pieces/UPE Poster.pdf">
+                                <a href="images/graphic_design/pieces/UPE Poster.png" data-lightbox="CS Honors Society Poster">
                                     <div class="overlay"></div>
                                     <div class="graphic-title">UPE<br>Poster</div>
                                 </a>
@@ -149,7 +149,7 @@
 
             </div>
             <div class="contact">
-                <a name="contact"></a>
+                <p id="contact_link"></p>
                 <div class="container">
                     <div class="section-heading">CONTACT</div>
                     <div class="section-subheading white">Need help building something?</div>
@@ -181,7 +181,8 @@
                 </div>
             </div>
         </div>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/scripts.js"></script>
+        <script src="lightbox-master/src/js/lightbox.js"></script>
     </body>
     </html>
