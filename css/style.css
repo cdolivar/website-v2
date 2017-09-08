@@ -390,6 +390,27 @@ button {
     cursor: pointer;
 }
 
+.circle {
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: var(--dark-pink);
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 20px 20px 20px 20px;
+      cursor: pointer;
+    }
+
+.circle-text {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 35%;
+}
+
 /* Scrolling in */
 
 .come-in {

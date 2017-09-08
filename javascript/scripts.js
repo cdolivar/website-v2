@@ -51,6 +51,13 @@ $(document).ready(function() {
         }, scrolltime);
     });
 
+    // button back to top
+    $("#top").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home_link").offset().top
+        }, scrolltime);
+    });
+
     $("#about").click(function() {
         $('html, body').animate({
             scrollTop: $("#about_link").offset().top
