@@ -8,6 +8,32 @@ function myFunction() {
     }
 }
 
+var scrolltime = 500;
+
 $(document).ready(function() {
     // $(".section-heading").css("color", "blue");
+    $("#home").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home_link").offset().top
+        }, scrolltime);
+    });
+
+    $("#about").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about_link").offset().top
+        }, scrolltime);
+    });
+
+    $("#uiux").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#uiux_link").offset().top
+        }, scrolltime);
+    });
+
+    $("#design").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#design_link").offset().top
+        }, scrolltime);
+    });
+
 });

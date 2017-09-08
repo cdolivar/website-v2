@@ -4,7 +4,7 @@
     <title>Charles David Olivar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="images/logo.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,13 +12,15 @@
 </head>
 <body>
     <div class="topnav" id="topnav">
-        <div class="logo"> </div>
+        <div class="logo" id="home"> </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        <a href="#contact">Contact</a>
-        <a href="#design">Graphic Design</a>
-        <a href="#uiux">UI/UX</a>
-        <a href="#about" class="active">About</a>
+        <a id="contact" class="clickable">Contact</a>
+        <a id="design" class="clickable">Graphic Design</a>
+        <a id="uiux" class="clickable">UI/UX</a>
+        <a id="about" class="clickable">About</a>
     </div>
+
+    <p id="home_link"></p>
 
     <div class="banner blue-background">
         <div class="chameleon"></div>
@@ -29,8 +31,8 @@
             <div class="tagline">Designer. Developer.</div>
         </div>
 
-        <div class="about" name="about">
-            <a name="about"></a>
+        <div class="about">
+            <p id="about_link"></p>
             <div class="container">
                 <div class="section-heading">ABOUT</div>
                 <div class="section-subheading">Learn a bit about me!</div>
@@ -50,7 +52,8 @@
         </div>
 
         <div class="uiux">
-        <a name="uiux"></a>
+            <p id="uiux_link"></p>
+            <a name="uiux"></a>
             <div class="container">
                 <div class="section-heading">UI/UX DESIGN</div>
                 <div class="section-subheading">Did someone say human centered?</div>
@@ -74,47 +77,68 @@
             </div>
 
             <div class="graphic-design">
+                <p id="design_link"></p>
                 <a name="design"></a>
                 <div class="container">
                     <div class="section-heading">GRAPHIC DESIGN</div>
                     <div class="section-subheading">Things I like to work on in my spare time</div>
                     <div class="buffer"></div>
+
+
                     <!-- graphic design pieces -->
                     <div class="thumbnails">
+
                         <div class="graphic-card flyer">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">Klesis Flyer</div>
+                                <a target="blank" href="images/graphic_design/pieces/klesis_flyer.pdf">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">Klesis Flyer</div>
+                                </a>
                             </div>
                         </div>
+
                         <div class="graphic-card campanile">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">Isometric<br>Campanile</div>
+                                <a href="images/graphic_design/pieces/campanile.pdf">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">Isometric<br>Campanile</div>
+                                </a>
                             </div>
                         </div>
+
                         <div class="graphic-card missiontrip">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">Summer<br>Splash</div>
+                                <a href="images/graphic_design/pieces/mission trip.pdf">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">Summer<br>Splash</div>
+                                </a>
                             </div>
                         </div>
+
                         <div class="graphic-card chameleon-house">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">Chameleon<br>House</div>
+                                <a href="images/graphic_design/pieces/chameleon.png">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">Chameleon<br>House</div>
+                                </a>
                             </div>
                         </div>
+
                         <div class="graphic-card gradfest">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">Gradfest<br>Flyer</div>
+                                <a href="images/graphic_design/pieces/gradfest flyer.jpg">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">Gradfest<br>Flyer</div>
+                                </a>
                             </div>
                         </div>
+
                         <div class="graphic-card upe">
                             <div class="graphic-card-overlay">
-                                <div class="overlay"></div>
-                                <div class="graphic-title">UPE<br>Poster</div>
+                                <a href="images/graphic_design/pieces/UPE Poster.pdf">
+                                    <div class="overlay"></div>
+                                    <div class="graphic-title">UPE<br>Poster</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -131,18 +155,18 @@
                     <div class="section-subheading white">Need help building something?</div>
                     <div class="buffer"></div>
                     <div class="form">
-                    <form>
-                        <div>
-                            <label for="name"></label>
-                            <input type="text" name="name" placeholder="Name">
-                        </div>
-                        <div>
-                            <label for="email"></label>
-                            <input type="text" name="email" placeholder="Email">
-                        </div>
-                        <textarea placeholder="Message"></textarea>
-                        <button type="submit">Send</button>
-                    </form>
+                        <form>
+                            <div>
+                                <label for="name"></label>
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div>
+                                <label for="email"></label>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
                 </div>
                 <div class="buffer"></div>
