@@ -237,6 +237,7 @@ a {
     padding-top: 20px;
     font-size: 13pt;
     padding-right: 40px;
+    color: var(--dark-grey);
 }
 
 .graphic-design {
