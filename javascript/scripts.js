@@ -45,11 +45,11 @@ var scrolltime = 500;
 $(document).ready(function() {
 
     // Scrolling
-    // $("#home").click(function() {
-    //     $('html, body').animate({
-    //         scrollTop: $("#home_link").offset().top
-    //     }, scrolltime);
-    // });
+    $("#home").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home_link").offset().top
+        }, scrolltime);
+    });
 
     // button back to top
     $("#top").click(function() {
