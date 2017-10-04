@@ -102,8 +102,9 @@ body {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 55pt;
+    font-size: 50pt;
     padding: 3px 7px 3px 7px;
+    margin-left: 15px;
     color: var(--soft-blue);
 }
 
@@ -479,7 +480,6 @@ button {
 }
 
 }
-
 
 
 
