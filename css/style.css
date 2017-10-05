@@ -197,6 +197,7 @@ a {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     float: left;
+    margin-right: 20px;
 }
 
 .walmart {
@@ -216,11 +217,12 @@ a {
 
 .card-content {
     padding-top: 20px;
-    position: relative;
-    left: 20px;
-
-
+    /*position: relative;*/
+    padding-left: 20px;
+    /*margin-left: 20px;*/
+    width: calc(100% - 20px);
 }
+
 
 .card-title {
     font-size: 25pt;
@@ -483,7 +485,7 @@ button {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .splash {
     border-style: none;
 }
