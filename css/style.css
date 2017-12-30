@@ -91,10 +91,10 @@ body {
     border-style: solid;
     border-width: 5px;
     border-color: white;
-    padding-left: 10px;
+    /*padding-left: 10px;
     padding-right: 7px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;*/
 }
 
 .name {
@@ -104,14 +104,14 @@ body {
     margin-bottom: 5px;
     font-size: 50pt;
     padding: 3px 7px 3px 7px;
-    margin-left: 15px;
+    margin-left: 5px;
     color: var(--soft-blue);
 }
 
 .tagline {
     position: absolute;
     margin-top: 15px;
-    margin-left: 65px;
+    margin-left: 35px;
     font-size: 18pt;
     color: white;
     background-color: var(--soft-blue);
@@ -261,7 +261,7 @@ a {
 
 .footer {
     background-color: #E7EEF0;
-    width: 100%;
+    width: 100vw;
     height: 80px;
 }
 
