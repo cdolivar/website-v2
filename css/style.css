@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
+    font-size: 16px;
+    color: var(--dark-grey);
     background-color: #F9F9F9;
 }
 
@@ -21,6 +23,10 @@ body {
     width: 100%;
     z-index: 1000000;
     top: 0;
+}
+
+.topnav-buffer {
+    height: 48px;
 }
 
 .logo {
@@ -128,6 +134,7 @@ body {
 
 .section-heading {
     font-family: 'Roboto', sans-serif;
+    color: var(--darker-grey);
     padding-top: 50px;
     font-size: 30pt;
 }
@@ -550,7 +557,9 @@ button {
 
 :root {
     --soft-blue: #B3D1D7;
+    --normal-grey: #697577;
     --dark-grey: #495557;
+    --darker-grey: #3c4142;
     --light-grey: #E7EEF0;
     --light-pink: #DF5589;
     --dark-pink: #DF5589;
