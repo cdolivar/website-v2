@@ -13,7 +13,7 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
 .topnav {
@@ -38,6 +38,11 @@ body {
     vertical-align: middle;
     display: inline-block;
     margin: 5px 5px 5px 10px;
+}
+
+.testing {
+    width: 100%;
+    height: 100%;
 }
 
 .topnav a {
@@ -128,6 +133,7 @@ body {
 .about {
     background-color: #F9F9F9;
     width: 100%;
+    max-width: 100%;
     height: auto;
     padding-bottom: 50px;
 }
@@ -162,6 +168,7 @@ a {
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
+    width: auto;
 }
 
 .headshot {
@@ -188,13 +195,58 @@ a {
 
 .buffer {
     height: 50px;
+    width: 0px;
 }
 
 .ux-card {
-    width: 550px;
-    height: 400px;
-    background-color: black;
+    width:600px;
+    height: 500px;
+    background-color: #F9F9F9;
     border-radius: 5px;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    max-width: 100%;
+    position: relative;
+}
+
+.ux-thumbnail {
+    /*background-color: black;*/
+    border-radius: 5px;
+    background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
+    background-size: cover;
+}
+
+.ux-hover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.ux-hover:hover {
+    background-color: white;
+    opacity: .2;
+}
+
+.ux-row {
+    text-align: center;
+}
+
+.ux-title {
+    font-size: 25px;
+    color: var(--darker-grey);
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.ux-subheading {
+    font-size: 18px;
+    padding-left: 20px;
+    color: var(--normal-grey);
+    text-align: center;
 }
 
 .company {
@@ -492,8 +544,6 @@ button {
     background-size: cover;
     bottom: 0;
 }
-
-
 
 .topnav a:not(:first-child) {display: none;}
 
