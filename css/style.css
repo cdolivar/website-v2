@@ -191,11 +191,10 @@ a {
 }
 
 .ux-card {
-    width: 100%;
-    height: 200px;
-    background-color: #F9F9F9;
+    width: 550px;
+    height: 400px;
+    background-color: black;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .company {
@@ -208,21 +207,6 @@ a {
     margin-right: 20px;
 }
 
-.walmart {
-    background-color: #007DC6; /* walmart primary blue */
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.walmart-logo {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/walmart.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
 .card-content {
     padding-top: 20px;
     /*position: relative;*/
@@ -230,7 +214,6 @@ a {
     /*margin-left: 20px;*/
     width: calc(100% - 20px);
 }
-
 
 .card-title {
     font-size: 25pt;
