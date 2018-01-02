@@ -212,7 +212,6 @@ a {
 .ux-thumbnail {
     background-color: #9EC5AB;
     border-radius: 5px;
-    background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
     background-size: cover;
 }
 
@@ -251,6 +250,10 @@ a {
     width: 100%;
     position: absolute;
     top: calc(40% + 55px);
+}
+
+.ux-thumbnail-smartcart {
+    background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
 }
 
 .company {
