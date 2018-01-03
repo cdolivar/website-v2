@@ -210,7 +210,7 @@ a {
 }
 
 .ux-thumbnail {
-    background-color: #9EC5AB;
+
     border-radius: 5px;
     background-size: cover;
 }
@@ -253,10 +253,12 @@ a {
 }
 
 .ux-thumbnail-smartcart {
+    background-color: #9EC5AB; /* smartcart green */
     background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
 }
 
 .ux-thumbnail-aether {
+    background-color: #175487; /* aether blue */
     background-image: url("../images/case_studies/aether/aether_thumbnail.png");
 }
 
