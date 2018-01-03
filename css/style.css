@@ -256,6 +256,10 @@ a {
     background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
 }
 
+.ux-thumbnail-aether {
+    background-image: url("../images/case_studies/aether/aether_thumbnail.png");
+}
+
 .company {
     width: 40%;
     height: 100%;
