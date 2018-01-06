@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socratic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/case_study.css">
+    <link rel="icon" href="images/logo.ico">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="topnav">
+        <div class="logo" id="home"><a href="index.html" > <div class="testing"> </div> </a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a id="contact" class="clickable">Contact</a>
+        <a id="design" class="clickable">Graphic Design</a>
+        <a id="uiux" class="clickable">Work</a>
+        <a id="about" class="clickable">About</a>
+    </div>
+    <div class="topnav-buffer"></div>
+
+    <div class="socratic-banner"></div>
+    <div class="case-study-container">
+        <div class="case-study-heading heading-socratic">
+            Socratic
+        </div>
+        <div class="case-study-tagline">
+            “Got Discourse? Discuss!”
+        </div>
+
+        <div class="body-paragraph">
+            Socratic is an online platform for discussing current events with people of different opinions. It exposes you to different perspectives of the same event and promotes thoughtful and non-hostile conversation.
+        </div>
+
+        <div class="section-heading">
+            PROBLEM
+        </div>
+
+        <div class="body-paragraph">
+            During Fall 2017 I took <a href="https://www2.eecs.berkeley.edu/Courses/CS160/">CS160 (User Interface Design and Development)</a> taught by <a href="https://www.microsoft.com/en-us/research/people/johntang/">John Tang</a> where we explored the theme of <span class="bolder">“Bursting Echo Chambers in Social Media”</span>. We were tasked with designing a webapp to address this topic, following a human-centered process.
+        </div>
+
+        <div class="section-heading">
+            THE TEAM
+        </div>
+
+        <div class="body-paragraph">
+            Our team of four consisted of two developers (<a href="https://www.linkedin.com/in/genjinoguchi/">Genji</a> and <a href="https://www.linkedin.com/in/gemmaguo/">Gemma</a>), a designer (<a href="https://www.linkedin.com/in/takara-s-a0805bba/">Takara</a>), and me (a bit of both!). Takara and I spearheaded the design aspect of the project, from interviewing people to wireframing and visual aesthetics. When it came to prototyping with code, Genji and Gemma worked on the backend while I worked on the front end components.
+
+        </div>
+
+        <div class="section-heading">
+            NEEDFINDING
+        </div>
+
+        <div class="body-paragraph">
+            We started our user research by attending two events where people expressed a diversity of opinions:
+        </div>
+
+        <br style="margin-bottom:240px;"/>
+
+        <div class="body-paragraph">
+            <span class="bolder">
+                Event 1: MENA Salon: Free Speech and Exclusion on American Campuses
+            </span>
+
+        </div>
+
+        <div class="body-paragraph">
+            <a href="http://cmes.berkeley.edu/mena-salon/">Center for Middle Eastern Studies</a> hosts an informal weekly coffee hour and guided discussion of current events in the Middle East and North Africa.
+        </div>
+
+        <div class="body-paragraph">
+            Here's a sketch of the event:
+        </div>
+
+        <img src="images/case_studies/socratic/mena_salon.jpeg" class="casestudy-img">
+
+        <div class="body-paragraph">
+            After the event, we interviewed a couple people, following this discussion guide:
+        </div>
+
+        <img src="images/case_studies/socratic/discussion_guide_1.jpg" class="casestudy-img">
+
+        <div class="body-paragraph">
+            Here were a couple interpretations we made after observing the event and also interviewing participants: <br>
+            <div class="sub-body-paragraph">
+
+                - Conversation can be directed by a source of authority <br>
+                - Conversation can be smooth and efficient when there is a set of rules people know about and follow <br>
+                - Wording is important when talking about a topic. Words that signify statements as subjective opinions allow thoughts to be challenged or even supportive <br>
+                - Discussion can be richer when people understand what’s being said and share the same factual knowledge as the ones speaking <br>
+                - People are more likely to talk and listen to/with other people that are like-minded  <br>
+                - People are more likely to listen if you listen to them, even if their opinion differs from yours  <br>
+                - It’s hard to have/find open conversation with people who don’t share the same perspective <br>
+            </div>
+
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">
+                Event 2: White Supremacy, Gender, and Speech in the wake of Charlottesville
+            </span>
+        </div>
+
+        <div class="body-paragraph">
+            This event was panel of four speakers, speaking on perspectives on White Supremacy, Gender, and Free Speech.
+        </div>
+
+        <div class="body-paragraph">
+            Here’s a sketch of the event:
+        </div>
+
+        <img src="images/case_studies/socratic/white_supremacy_panel.png" class="casestudy-img ">
+
+        <div class="body-paragraph">
+            We got the chance to interview two law student who attended the panel after the event, this time being more brief because it seemed like people were on their way out:
+        </div>
+
+        <img src="images/case_studies/socratic/discussion_guide_2.jpg" class="casestudy-img">
+
+        <div class="body-paragraph">
+            Here were some takeaways from our interviews: 
+            <div class="sub-body-paragraph">
+                - Conversations, especially about controversial topics, requires mutual trust and respect for one another in order to be effective <br>
+                - Relevant topics are a strong motivator for people to attend talks, even ones with opposing views <br>
+                - People groups generally will not tolerate opinions that put down their humanity <br>
+                - The viewpoints of these talks should be presented with honesty and tranparency <br>
+            </div>
+        </div>
+
+        <div class="section-heading">
+            POV + HMW
+        </div>
+
+        <div class="body-paragraph">
+            From there we did some affinity mapping and grouped our insights to help us organize our data and narrow the design space.
+        </div>
+
+        <img src="images/case_studies/socratic/affinity_mapping.JPG" class="casestudy-img">
+
+        <div class="body-paragraph">
+            After, we created some <a href="https://www.interaction-design.org/literature/article/define-and-frame-your-design-challenge-by-creating-your-point-of-view-and-ask-how-might-we">Point of View and How Might We</a> statements to guide our ideation phase:
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">Point of View</span>
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">1.</span> <span class="underlined">We met</span> a group of older men who regularly discuss current events involving the Middle East and North America. <span class="underlined">We were amazed to learn </span>that they were willing to listen and converse with people with perspectives different from theirs, but that there wasn’t really anyone from a radically different background. <span class="underlined">It would be game-changing</span> if we could get people from drastically different backgrounds and opinions to participate in their discussions. <br>
+            <br style="margin-bottom:240px;"/>
+            <span class="bolder">2.</span> <span class="underlined">We met</span> two open minded law students who are passionate about what they believe, but still attend talks that they do not agree with. <span class="underlined">We were amazed to learn</span> that their main reason for going to the events was learning value, regardless of whether the information was in support of their existing belief or not. They did not expect their opinion to be changed, learning information from the other side does not necessitate arriving with their conclusion. <span class="underlined">It would be game-changing</span> if we could focus our goals to learning, rather than argument and persuasion.
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">How Might We</span>
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">1.</span> <span class="underlined">How might we</span> facilitate a space for learning rather than trying to persuade and conquer?
+
+            <br>
+            <br style="margin-bottom:240px;"/>
+            <span class="bolder">2.</span> <span class="underlined">How might we</span> establish decorum and a baseline understanding of factual information to hold a constructive discussion?
+        </div>
+
+        <div class="section-heading">
+            IDEATION
+        </div>
+
+        <div class="body-paragraph">
+            Based off of our research, we brainstormed 5 possible design solutions to our problem and picked one to try out:
+            <div class="sub-body-paragraph">
+                <span class="bolder">1.</span> Chat rooms categorized by topics <br>
+                <span class="bolder">2.</span> Dedicated sites for college students to pick speakers <br>
+                <span class="bolder">3.</span> A microphone where people can only speak when they have it, else they have to listen <br>
+                <span class="bolder">4.</span> <span class="underlined"> An online board where post opinions and respond to other people’s opinions </span><br>
+                <span class="bolder">5.</span> A feed that shows you posts that are the opposite of what you would want <br>
+            </div>
+        </div>
+
+        <div class="section-heading">
+            PROTOYPE
+        </div>
+
+        <div class="body-paragraph">
+            We decided to expand on idea 4 and created a working prototype using <a href="https://www.meteor.com/">meteor</a> and <a href="http://handlebarsjs.com/">handlebars</a> going off the following general user flow:
+        </div>
+
+        <img src="images/case_studies/socratic/user_flow.JPG" class="casestudy-img">
+
+        <div class="body-paragraph">
+            The first screen shows a list of people’s submitted opinions, along with a brief description expanding upon the title.
+        </div>
+
+        <img src="images/case_studies/socratic/prototype_1.png" class="casestudy-img">
+
+        <div class="body-paragraph">
+            Clicking on “add new opinion” takes you to a page where you can input information for a new post.
+        </div>
+
+        <img src="images/case_studies/socratic/prototype_2.png" class="casestudy-img">
+
+        <div class="body-paragraph">
+            Clicking any of the opinion cards reveals a comment thread where you can discuss the opinion with other users.
+        </div>
+
+        <img src="images/case_studies/socratic/prototype_3.png" class="casestudy-img">
+
+
+        <div class="section-heading">
+            USER TESTING
+        </div>
+
+        <div class="body-paragraph">
+            We user tested with 5 different people, having them go through the following core user task while talking out loud:
+        </div>
+
+        <div class="sub-body-paragraph">
+            Participate in a conversation with someone under someone else’s post and gain new knowledge from the exchange. (the replies from other users will be simulated on our end so the user can reply).
+        </div>
+
+
+        <img src="images/case_studies/socratic/usertesting.png" class="casestudy-img">
+
+        <div class="body-paragraph">
+            After completing the task, we asked users to give us feedback via <a href="https://docs.google.com/forms/d/e/1FAIpQLScrV4NLZvh5nwLeU0pVxYGpF2gtliVgyWgkdwc-qN7fF9igWA/viewform">this google form</a>, and gave them time to fill it out.
+        </div>
+
+        <div class="body-paragraph">
+            We received a lot of feedback and found many places to improve the product from the tests we conducted:
+            <div class="sub-body-paragraph">
+                -   Difficult navigation <br>
+                -   Core user task and what people found the site was meant for was unclear <br>
+                -   "Give us a nickname" prompt when adding a new opinion was confusing <br>
+                -   Might be helpful to have a name of the website <br>
+                -   Put a username attributed to the opinion otherwise they just think it’s a topic not someone's opinion <br>
+                -   People found unclear: What are the comments? What are people trying to do in the comments? What standpoints are they coming from? <br>
+                -   How to display an ongoing conversation <br>
+                -   The comment section doesn't look like a comment section <br>
+            </div>
+        </div>
+
+        <div class="body-paragraph">
+            Most of the problems that came up from the prototype simply came from the fact that we didn’t have the time to create a fully fleshed-out app.This was okay since we were mainly interested in testing our concept. The conceptual aspect is where we received the most <span class="bolder">valuable feedback</span>:
+            <div class="sub-body-paragraph">
+                -   The concept in general seems very boring to users <br>
+                -   Most users said they would not want to use this app <br>
+                -   Discussion with intent to learn from others isn’t encouraged by the current interface <br>
+            </div>
+        </div>
+
+        <div class="section-heading">
+            ITERATE
+        </div>
+
+        <div class="body-paragraph">
+            With the feedback we received, we decided to improve our app with the following goals:
+            <div class="sub-body-paragraph">
+                - Engage users with more directed content in order to focus conversation <br>
+                - Encourage discussion on important topics from people of different backgrounds <br>
+            </div>
+        </div>
+
+        <div class="body-paragraph">
+            Steps to take:
+            <div class="sub-body-paragraph">
+                - Guide discussion with prompts and discussion questions <br>
+                - Include articles on current events from different parts of the political spectrum
+            </div>
+        </div>
+
+        <div class="body-paragraph">
+            <span class="bolder">
+                Socratic 2.0
+            </span>
+        </div>
+
+        <div class="body-paragraph">
+            We wanted to make the following changes
+            <div class="sub-body-paragraph">
+                - An opinion related to current events <br>
+                <div class="sub-sub-body-paragraph">
+                    • We decided to only allow one opinion so that all traffic is funneled to that one discussion for people to participate <br>
+                    • The opinion would change every week <br>
+                </div>
+                - 3 articles related to the event for users to read <br>
+                <div class="sub-sub-body-paragraph">
+                    • Each article would come from a different part of the political spectrum (inspired by <a href="https://www.allsides.com/unbiased-balanced-news">allsides</a>) <br>
+                </div>
+
+                - Buttons to indicate whether or not you agree or disagree with the stated opinion <br>
+                - two comment threads that separates those who agree and those who disagree <br>
+                <div class="sub-sub-body-paragraph">
+                    • Replies would be color-coded to indicate whether or not you agree with the opinion <br>
+                    • The comment area would not be visible until you indicated your position <br>
+                </div>
+                - Comments with the most points rise to the top
+                <div class="sub-sub-body-paragraph">
+                    • The catch is <span class="bolder">you can only upvote comments made by those who disagree with your perspective</span> <br>
+                    • You cannot see the score of comments by those who agree with you
+                </div>
+
+            </div>
+        </div>
+
+        <div class="body-paragraph">
+            We created a quick sketch before moving on to high-fidelity screens
+        </div>
+
+        <img src="images/case_studies/socratic/sketch.JPG" class="casestudy-img">
+
+        <div class="section-heading">
+            FINAL DESIGN
+        </div>
+
+        <img src="images/case_studies/socratic/final_screen.png" class="casestudy-img">
+
+        <div class="section-heading">
+            DEMO
+        </div>
+
+        <div class="body-paragraph">
+            We created a hi-fi prototype and demo video to present our project to the class:
+        </div>
+
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/1wr91QPzaU4" style="padding-top: 10px;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+        <div class="body-paragraph">
+            Feel free to check out the github repo: <br>
+            <a href="https://github.com/genjinoguchi/echoechoechoechoecho">
+                http://bit.ly/2CvU21P
+            </a>
+        </div>
+
+        <div class="section-heading">
+            IF WE HAD MORE TIME
+        </div>
+
+        <div class="body-paragraph">
+            If we could iterate on this project one more time, we would:
+            <div class="sub-body-paragraph">
+                - Create a page to view previous discussions/opinions
+                - Create a way to make sure users read all three articles before clicking “agree” or “disagree”
+                - Add a “Neutral” button option
+                <div class="sub-sub-body-paragraph">
+                    • Opinions aren’t so black and white!
+                </div>
+                - Create user profile functionality
+                <div class="sub-sub-body-paragraph">
+                    • Make it optional so users don’t have to commit to an account to participate
+                </div>
+            </div>
+        </div>
+
+        <div class="section-heading">
+            TAKEAWAYS
+        </div>
+
+        <div class="body-paragraph">
+            User testing is super super super valuable
+            <div class="sub-body-paragraph">
+                - We found so many ways to improve our with just a couple people going through our prototype <br>
+                - Users ran into many issues we never would’ve found ourselves
+            </div>
+        </div>
+
+        <div class="body-paragraph">
+            Code takes time, keep that in mind
+            <div class="sub-body-paragraph">
+                - It takes much longer to build something that works with a JavaScript framework than it does creating something pretty with Sketch and Illustrator <br>
+                - This may seem obvious, being conscious of that will help you keep up with the project timeline and will spare you all-nighters fixing bugs
+            </div>
+        </div>
+        <div class="body-paragraph">
+            The final product can look very different from your initial solution
+        </div>
+    </div>
+
+    <div class="buffer"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a target="_blank" href="images/resume.pdf">resume</a> |
+            <a target="_blank" href="mailto:cdolivar@berkeley.edu">email</a> |
+            <a target="_blank" href="https://www.linkedin.com/in/charles-david-olivar-2b3134104">linkedin</a> |
+            <a target="_blank" href="https://github.com/cdolivar">github</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+</body>
+</html>

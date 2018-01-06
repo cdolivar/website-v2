@@ -23,6 +23,10 @@
     color: #175487; /* aether blue */
 }
 
+.heading-socratic {
+    color: #3772B4; /* socratic blue */
+}
+
 .smartcart-banner {
     width: 100%;
     height: 350px;
@@ -48,13 +52,32 @@
     background-attachment: fixed;
 }
 
-.casestudy-img {
-    margin-top: 30px;
+.socratic-banner {
     width: 100%;
+    height: 350px;
+    background-color: #617E99; /* socratic blue */
+    color: white;
+    /*background-image: url("images/case_studies/smartcart/banner.png");*/
+    background-image: url("../images/case_studies/socratic/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.casestudy-img {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+
 }
 
 .bolder {
     font-weight: bolder;
+}
+
+.underlined {
+    text-decoration: underline;
 }
 
 .body-paragraph {
@@ -67,7 +90,7 @@
     font-size: 18px;
     padding-left: 25px;
     line-height: 160%;
-    padding-top: 3px;
+    margin-top: 10px;
 }
 
 .sub-sub-body-paragraph {
