@@ -27,6 +27,10 @@
     color: #3772B4; /* socratic blue */
 }
 
+.heading-skyalert {
+    color: #EE5330;
+}
+
 .smartcart-banner {
     width: 100%;
     height: 350px;
@@ -52,6 +56,18 @@
     background-attachment: fixed;
 }
 
+.skyalert-banner {
+    width: 100%;
+    height: 350px;
+    background-color: #175487; /* aether blue */
+    color: white;
+    background-image: url(../images/case_studies/skyalert/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
 .socratic-banner {
     width: 100%;
     height: 350px;
@@ -69,7 +85,7 @@
     margin-top: 10px;
     width: 100%;
     margin-bottom: 30px;
-
+    border-radius: 10px;
 }
 
 .bolder {
