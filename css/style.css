@@ -272,6 +272,11 @@ a {
     background-image: url("../images/case_studies/skyalert/skyalert_thumbnail.png");
 }
 
+.ux-thumbnail-indeed {
+    background-color: #095FF7; /* indeed blue */
+    background-image: url("../images/case_studies/indeed/indeed_thumbnail.png");
+}
+
 .company {
     width: 40%;
     height: 100%;
