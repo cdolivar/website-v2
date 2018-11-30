@@ -101,7 +101,7 @@ body {
     left: calc(50% - 180.4765px);
     border-style: solid;
     border-width: 5px;
-    border-color: white;
+    border-color: transparent; /*white;*/
     /*padding-left: 10px;
     padding-right: 7px;
     padding-top: 5px;
@@ -109,7 +109,7 @@ body {
 }
 
 .name {
-    background-color: white;
+    /*background-color: white;*/
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -119,15 +119,204 @@ body {
     color: var(--soft-blue);
 }
 
+.namerectangle {
+    height: 84px;
+    background-color: white;
+    position: absolute;
+    float: left;
+
+    /*animation-name: name;
+    animation-duration: 3s;
+    animation-fill-mode: forward;
+    animation-timing-function: linear;*/
+}
+
+.rec1 {
+    animation-name: rec1;
+    top: -2px;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.rec2 {
+    top: 90px;
+    animation-name: rec2;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    /*animation-delay: .1s;*/
+}
+
+.rec3 {
+    top: 182px;
+    animation-name: rec3;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    /*animation-delay: .2s;*/
+}
+
+@keyframes rec1 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 307px;
+    }
+}
+
+@keyframes rec2 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 210px;
+    }
+}
+
+@keyframes rec3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 260px;
+    }
+}
+
+.boxtop {
+    height: 5px;
+    width: 330px;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    background-color: white;
+
+    animation-name: boxtop;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.boxright {
+    /*height: 295px;*/
+    width: 5px;
+    position: absolute;
+    top:-15px;
+    left: 315px;
+    background-color: white;
+
+    animation-name: boxright;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-out;
+}
+
+.boxbot {
+    height: 5px;
+    /*width: 330px;*/
+    position: absolute;
+    top: 275px;
+    left: -10px;
+    background-color: white;
+
+    animation-name: boxbot;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-out;
+}
+
+.boxleft {
+    /*height: 295px;*/
+    width: 5px;
+    position: absolute;
+    top:-15px;
+    left: -10px;
+    background-color: white;
+
+    animation-name: boxleft;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    /*animation-delay: 0.6s;*/
+    animation-timing-function: ease-out;
+}
+
+@keyframes boxtop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 330px;
+    }
+}
+
+@keyframes boxright {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 295px;
+    }
+}
+
+@keyframes boxbot {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 330px;
+    }
+}
+
+@keyframes boxleft {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 295px;
+    }
+}
+
 .tagline {
     position: absolute;
-    margin-top: 15px;
-    margin-left: 35px;
+    margin-top: 300px;
+    /*margin-left: 35px;*/
     font-size: 18pt;
     color: white;
+    opacity: 0;
     background-color: var(--soft-blue);
-    padding-left: 5px;
-    padding-right: 5px;
+    left: 45px;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+
+    animation-name: tagline;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+}
+
+@keyframes tagline{
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .about {
@@ -409,6 +598,11 @@ a {
 
 .chameleon-house {
     background-image: url(../images/graphic_design/chameleon_house.png);
+    opacity: 0;
+    animation-name: chameleon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .gradfest {
