@@ -293,7 +293,7 @@ body {
     font-size: 18pt;
     color: white;
     opacity: 0;
-    background-color: var(--soft-blue);
+    /*background-color: var(--soft-blue);*/
     left: 45px;
     /*padding-left: 5px;
     padding-right: 5px;*/
@@ -726,8 +726,8 @@ button {
 }
 
 .tagline {
-    background-color: white;
-    color: var(--soft-blue);
+    /*background-color: white;*/
+    /*color: var(--soft-blue);*/
 }
 
 .section-content {
@@ -757,7 +757,7 @@ button {
 }
 
 .tagline{
-    display: none;
+    /*display: none;*/
 }
 .chameleon {
     background-image: url(../images/single_plant.svg);
