@@ -420,6 +420,8 @@ a {
 }
 
 .uiux-grid {
+    padding-left: 10px;
+    padding-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -428,8 +430,6 @@ a {
     " indeed skyalert "
     " aether socratic "
     " smartcart " ;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .ux-card {
@@ -548,6 +548,8 @@ a {
 /* BEGIN GRAPHIC DESIGN PORTFOLIO */
 
 .graphic-grid {
+    padding-left: 10px;
+    padding-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 13px;
@@ -568,6 +570,7 @@ a {
 .graphic-design-piece {
     width: 100%;
     margin-top: 10px;
+    cursor: pointer;
 
     -webkit-transition: box-shadow .5s; /* For Safari 3.1 to 6.0 */
 }
@@ -610,7 +613,7 @@ textarea {
     height: 300px;
     max-width: 100%;
     /* add own style */
-    width:
+    margin: 100px;
 }
 
 button {
@@ -794,16 +797,11 @@ button {
         color: white;
     }
 
-    .graphic-card {
-        width: 400px;
-        height: 400px;
-        /*background-color: black;*/
-        display: inline-block;
-        margin: 0;
-        max-width: 100%;
-        background-size: cover;
-        background-position: center;
-        position: relative;
+    .graphic-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "col1"
+        "col2";
     }
 }
 
