@@ -6,6 +6,13 @@
     --light-grey: #E7EEF0;
     --light-pink: #DF5589;
     --dark-pink: #DF5589;
+
+    /* ux case study colors */
+    --skyalert-orange: #EE532F;
+    --indeed-blue: #095FF7;
+    --socratic-blue: #235d91;
+    --aether-blue: #175487;
+    --smartcart-green: #9EC5AB;;
 };
 
 body {
@@ -335,15 +342,11 @@ div {
 .tagline {
     position: absolute;
     margin-top: 300px;
-    /*margin-left: 35px;*/
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
     color: white;
     opacity: 0;
-    /*background-color: var(--soft-blue);*/
     left: 45px;
-    /*padding-left: 5px;
-    padding-right: 5px;*/
 
     animation-name: tagline;
     animation-duration: 1s;
@@ -373,11 +376,11 @@ div {
     padding-bottom: 50px;
 }
 
-#about_link{
+#about_link, #uiux_link {
     margin: 0px;
 }
 
-.section-heading {
+.section-heading{
     font-family: 'Roboto', sans-serif;
     color: var(--darker-grey);
     padding-top: 50px;
@@ -405,26 +408,100 @@ a {
     width: auto;
 }
 
-/*.headshot {
-    width: 350px;
-    height: 350px;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-image: url(../images/headshot.JPG);
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-    margin-right: 30px;
-    }*/
+::selection {
+  background: #C394A6;
+}
 
-    ::selection {
-      background: #C394A6;
-  }
-
-  .uiux {
+.uiux {
     background-color: #E7EEF0;
     width: 100%;
+    padding-bottom: 20px;
 
+}
+
+.uiux-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+    " indeed skyalert "
+    " aether socratic "
+    " smartcart " ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ux-card {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+
+    -webkit-transition: box-shadow .5s; /* For Safari 3.1 to 6.0 */
+}
+
+.hover-white {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0;
+
+    -webkit-transition: opacity .5s; /* For Safari 3.1 to 6.0 */
+}
+
+.ux-title {
+    color: transparent;
+
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+}
+
+.ux-card:hover .hover-white{
+    color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    opacity: .5;
+}
+
+.ux-card:hover .ux-title {
+    color: white;
+}
+
+.ux-title {
+    font-size: 40px;
+}
+
+.indeed {
+    grid-area: "indeed";
+    background-color: var(--indeed-blue)
+}
+
+.skyalert {
+    grid-area: "skyalert";
+    background-color: var(--skyalert-orange)
+}
+
+.aether {
+    grid-area: "aether";
+    background-color: var(--aether-blue)
+}
+
+.socratic {
+    grid-area: "socratic";
+    background-color: var(--socratic-blue)
+}
+
+.smartcart {
+    grid-area: "smartcart";
+    background-color: var(--smartcart-green)
 }
 
 .buffer {
@@ -432,125 +509,10 @@ a {
     width: 0px;
 }
 
-.ux-card {
-    width:600px;
-    height: 500px;
-    background-color: #F9F9F9;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px 10px 10px 10px;
-    max-width: 100%;
-    position: relative;
-}
-
-.ux-thumbnail {
-
-    border-radius: 5px;
-    background-size: cover;
-}
-
-.ux-hover {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 5px;
-    opacity: 0;
-    color: red;
-}
-
-.ux-hover:hover {
-    background-color: white;
-    color: var(--darker-grey);
-    opacity: .7;
-    -webkit-transition: linear .3s; /* For Safari 3.1 to 6.0 */
-}
-
-.ux-row {
-    text-align: center;
-}
-
-.ux-title {
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    /*left: 40%;*/
-}
-
-.ux-subheading {
-    font-size: 25px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: calc(40% + 55px);
-}
-
-.ux-thumbnail-smartcart {
-    background-color: #9EC5AB; /* smartcart green */
-    background-image: url("../images/case_studies/smartcart/smartcart_thumbnail.png");
-}
-
-.ux-thumbnail-aether {
-    background-color: #175487; /* aether blue */
-    background-image: url("../images/case_studies/aether/aether_thumbnail.png");
-}
-
-.ux-thumbnail-socratic {
-    background-color: #235d91; /* socratic blue */
-    background-image: url("../images/case_studies/socratic/socratic_thumbnail.png");
-}
-
-.ux-thumbnail-skyalert {
-    background-color: #EE532F; /* skyalert orange */
-    background-image: url("../images/case_studies/skyalert/skyalert_thumbnail.png");
-}
-
-.ux-thumbnail-indeed {
-    background-color: #095FF7; /* indeed blue */
-    background-image: url("../images/case_studies/indeed/indeed_thumbnail.png");
-}
-
-.company {
-    width: 40%;
-    height: 100%;
-    background-color: grey;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    float: left;
-    margin-right: 20px;
-}
-
-.card-content {
-    padding-top: 20px;
-    /*position: relative;*/
-    padding-left: 20px;
-    /*margin-left: 20px;*/
-    width: calc(100% - 20px);
-}
-
-.card-title {
-    font-size: 25pt;
-    color: var(--light-pink);
-}
-
-.card-subtitle {
-    position: relative;
-    left: 5px;
-    font-size: 11pt;
-    color: #495557;
-}
-
-.card-info {
-    padding-top: 20px;
-    font-size: 13pt;
-    padding-right: 40px;
-    color: var(--dark-grey);
-}
-
 .graphic-design {
     background-color: #F9F9F9;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .contact {
@@ -583,83 +545,35 @@ a {
     cursor: pointer;
 }
 
-.thumbnails {
+/* BEGIN GRAPHIC DESIGN PORTFOLIO */
 
+.graphic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 13px;
+    grid-template-areas:
+    "col1 col2";
 }
 
-.graphic-card {
-    width: 400px;
-    height: 400px;
-    /*background-color: black;*/
-    display: inline-block;
-    margin: 5px 5px 5px 5px;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.graphic-card-overlay {
+.col {
+    display: block;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
+    height: auto;
 }
 
-.graphic-card-overlay:hover {
-    opacity: 1;
-    -webkit-transition: linear .3s;
+.col1 {
+    grid-area: "col1";
 }
 
-.graphic-title {
-    position: absolute;
-    top: 40%;
-    text-align: center;
+.graphic-design-piece {
     width: 100%;
-    font-size: 30pt;
-    color: white;
+    margin-top: 10px;
+
+    -webkit-transition: box-shadow .5s; /* For Safari 3.1 to 6.0 */
 }
 
-.overlay {
-    background-color: var(--dark-grey);
-    width: 100%;
-    height: 100%;
-    opacity: .4;
-}
-
-/* GRAPHIC DESIGN PORTFOLIO */
-
-.flyer {
-    background-image: url(../images/graphic_design/pursuit_flyer.png);
-}
-
-.campanile {
-    background-image: url(../images/graphic_design/isometric_campanile.png);
-}
-
-.missiontrip {
-    background-image: url(../images/graphic_design/missiontrip_splash.png);
-}
-
-.chameleon-house {
-    background-image: url(../images/graphic_design/chameleon_house.png);
-    opacity: 0;
-    animation-name: chameleon;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-.gradfest {
-    background-image: url(../images/graphic_design/gradfest.png);
-}
-
-.mushrooms {
-    background-image: url(../images/graphic_design/mushrooms.png);
-}
-
-.upe {
-    background-image: url(../images/graphic_design/upe.png);
+.graphic-design-piece:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 /* END GRAPHIC DESIGN PORTFOLIO */
@@ -758,8 +672,6 @@ button {
         color: grey;
     }
 
-
-
     .grid {
         padding-left: 10px;
         padding-right: 10px;
@@ -845,7 +757,6 @@ button {
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas:
         " headshot"
         " bio " ;
@@ -863,6 +774,24 @@ button {
 
     .company {
         display: none;
+    }
+
+    .uiux-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "indeed"
+        "skyalert"
+        "aether"
+        "socratic"
+        "smartcart"
+    }
+
+    .ux-card {
+        height: 150px;
+    }
+
+    .ux-title{
+        color: white;
     }
 
     .graphic-card {
