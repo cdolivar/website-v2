@@ -447,6 +447,7 @@ a {
 }
 
 .hover-white {
+    z-index: 99;
     position: absolute;
     left: 0;
     top: 0;
@@ -461,18 +462,17 @@ a {
 
 .ux-title {
     color: transparent;
-
+    z-index: 100;
     -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
 }
 
 .ux-card:hover .hover-white{
-    color: white;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    opacity: .5;
+    opacity: .7;
 }
 
 .ux-card:hover .ux-title {
-    color: white;
+    color: var(--dark-grey);
 }
 
 .ux-title {
@@ -545,6 +545,11 @@ a {
     cursor: pointer;
 }
 
+.thumbnail {
+    position: absolute;
+
+}
+
 /* BEGIN GRAPHIC DESIGN PORTFOLIO */
 
 .graphic-grid {
@@ -581,6 +586,12 @@ a {
 
 /* END GRAPHIC DESIGN PORTFOLIO */
 
+
+.form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 input, textarea, button {
     /* remove default styles */
     border:none;
@@ -592,12 +603,14 @@ input, textarea, button {
 
     /* add own style*/
     font-size: 14pt;
-    margin-bottom: 10px;
+    max-width: 100%;
 }
 
 input {
     border-bottom:2px solid var(--light-pink);
     width: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 textarea:focus, input:focus{
@@ -613,14 +626,16 @@ textarea {
     height: 300px;
     max-width: 100%;
     /* add own style */
-    margin: 100px;
+    margin-top: 10px;
 }
 
 button {
     display: block;
     background-color: var(--light-pink);
     color: white;
+    margin-top: 10px;
     width: 100px;
+    height: 40px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -680,33 +695,6 @@ button {
         padding-right: 10px;
     }
 
-    .section-info {
-        width: 100%;
-    }
-
-    .tagline {
-        /*background-color: white;*/
-        /*color: var(--soft-blue);*/
-    }
-
-    .section-contents {
-        /*margin: auto;*/
-        width: 100px;
-        height: 500px;
-        /*max-width: 700px;*/
-    }
-
-    .section-heading {
-        padding-left: 10px;
-    }
-
-    .section-subheading {
-        padding-left: 10px;
-    }
-
-    .thumbnails {
-        text-align: center;
-    }
 
 }
 
@@ -791,10 +779,15 @@ button {
 
     .ux-card {
         height: 150px;
+        display: flex;
     }
 
     .ux-title{
         color: white;
+    }
+
+    .thumbnail {
+        display: none;
     }
 
     .graphic-grid {
