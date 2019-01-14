@@ -376,7 +376,7 @@ div {
     padding-bottom: 50px;
 }
 
-#about_link, #uiux_link {
+#about_link, #uiux_link, #design_link, #contact_link, #home_link{
     margin: 0px;
 }
 
